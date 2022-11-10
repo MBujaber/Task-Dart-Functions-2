@@ -59,7 +59,7 @@ void printHello(String name, String language) {
  * - and prints out the bigger number
  */
 
-void printMax(int num1, num2) {
+void printMax(int num1, int num2) {
   var nums = [num1, num2];
   nums.sort();
   print(nums.last);

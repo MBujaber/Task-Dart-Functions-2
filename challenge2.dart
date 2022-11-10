@@ -6,9 +6,10 @@
  * e.g.
  * greet("Hamza") => prints "Hello Hamza"
  */
-// void greet(String name) {
-//   // Your code here
-// }
+
+void greet(String name) {
+  print("Hello ${name}");
+}
 
 /**
  * isOdd(n):
@@ -19,9 +20,12 @@
  * isOdd(7) -> true
  * isOdd(10) -> false
  */
-// bool isOdd(int n) {
-//   // Your code here
-// }
+bool isOdd(int n) {
+  if (n % 2 == 0) {
+    return false;
+  }
+  return true;
+}
 
 /**
  * oddsSmallerThan(n):
@@ -32,9 +36,16 @@
  * oddsSmallerThan(7) -> 3
  * oddsSmallerThan(15) -> 7
  */
-// int oddsSmallerThan(int n) {
-//   // Your code here
-// }
+int oddsSmallerThan(int n) {
+  int total = 0;
+
+  for (int i = 0; i < n; i++) {
+    if (i % 2 == 1) {
+      total++;
+    }
+  }
+  return total;
+}
 
 /**
  * squareOrDouble(n):
@@ -49,3 +60,8 @@
 // int squareOrDouble(int n) {
 //   // Your code here
 // }
+void main() {
+  greet("mohammad");
+  print(isOdd(4));
+  print(oddsSmallerThan(5));
+}
